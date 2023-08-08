@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>
+            
+        </title>
+        <script src="../js/jquery-3.7.0.js"></script>
+    </head>
+    <body>
+        <p id="testParagraph">This is a paragraph</p>
+        <a href="">Link</a>
+        <script>
+(function ( $ ) {
+ 
+ var shade = "#556b2f";
+
+ $.fn.greenify = function() {
+     this.css( "color", shade );
+     return this;
+ };
+
+}( jQuery ));
+$( "a" ).greenify().addClass( "greenified" );
+        </script>
+    </body>
+</html>
